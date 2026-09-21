@@ -1,0 +1,31 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# WeChat Developer Tools
+project.private.config.json
+
+# miniprogram npm
+miniprogram_npm/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Idea / VSCode
+.idea/
+.vscode/
+
+# Build logs
+*.log
+
+#prompts
+plan/
+wechat-miniprogram-skills-main/
