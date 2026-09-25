@@ -2,6 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/login/index",
+    "pages/task/list/index",
+    "pages/task/detail/index",
+    "pages/task/abnormal/index",
     "pages/profile/index"
   ],
   "window": {

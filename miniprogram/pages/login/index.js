@@ -50,7 +50,7 @@ Page({
         context: this,
         selector: '#t-toast',
         message: '绑定成功',
-        theme: 'success',
+        theme: 'success', 
       });
 
       // 绑定成功后跳转首页

@@ -3,10 +3,10 @@ export const env = 'mock'; // 'mock' | 'dev' | 'prod'
 
 export const config = {
   mock: {
-    baseURL: 'https://mock.apifox.com/m1/xxxxxx-xxxxxx-default' // 需要替换为实际的 Apifox mock url
+    baseURL: 'https://m1.apifoxmock.com/m1/8868203-8665104-default' // 需要替换为实际的 Apifox mock url
   },
   dev: {
-    baseURL: 'http://<你的服务器IP>:8080'
+    baseURL: 'http://<服务器IP>:8080'
   },
   prod: {
     baseURL: 'https://api.yourdomain.com'

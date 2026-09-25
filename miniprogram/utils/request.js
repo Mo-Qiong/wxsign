@@ -27,13 +27,11 @@ export const request = (options) => {
         // HTTP 状态码 2xx
         if (res.statusCode >= 200 && res.statusCode < 300) {
           // 假设后端返回标准格式 { code: 0, data: ..., msg: ... }
-          if (res.data && res.data.code === 0) {
+          // 兼容 Apifox 默认 mock 的 code: 200
+          if (res.data && (res.data.code === 0 || res.data.code === 200)) {
             resolve(res.data.data);
           } else {
-            wx.showToast({
-              title: res.data?.msg || '业务错误',
-              icon: 'none'
-            });
+            // 这里去掉全局的 showToast，让具体的业务页面去 catch 并弹窗提示
             reject(res.data);
           }
         } else if (res.statusCode === 401) {
